@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> resgistration form</title>
+    </head>
+    <body>
+        <h1><b> Student registration</b></h1>
+        <form action="register" method="post">
+            <label for="FULL NAME">FULL NAME:</label><br>
+            <input type="text" id="full name" name="fullname" required>
+            <br><label for="STUDENT NUMBER">STUDENT NUMBER:</label><br>
+            <input type="int" id="student number" name="studentnumber" required>
+            <br><label for="EMAIL ADDRESS">EMAIL ADDRESS:</label><br>
+            <input type="email" id="email address" name="email address" required>
+            <br><label for="DATE OF BIRTH"> DATE OF BIRTH:</label><br>
+            <input type="date" id="date of birth" name="date of birth" required>
+            <br><label for="GENDER SELECTION">GENDER SELECTION:</label><br>
+            <input type="radio" id="MALE" name="gender" value="male" required>
+            <label for="MALE">MALE</label>
+            <input type="radio" id="FEMALE" name="gender" value="female" required>
+            <label for="FEMALE">FEMALE</label>
+            <input type="radio" id="OTHER" name="gender" value="other" required>
+            <label for ="OTHER">OTHER</label>
+           <br> <label for="COURSE">select your course:</label>
+            <select id="COURSE" name="COURSE" required>
+                <option value="">-- select course</option>
+                <option value="BSC INFORMATION TECHNOLOGY">BSC INFORMATION TECHNOLOGY</option>
+                <option value="MATH SCIENCE">MATH SCIENCE</option>
+                <option value="COMPUTER SCIENCE" >COMPUTER SCIENCE</option>
+            </select> 
+            <br><label for="YEAR">select your year:</label><br>
+            <select id="YEAR" name="YEAR" required>
+                <option value="">-- select year --</option>
+                <option value="year one">year one</option>
+                <option value="year two">year two</option>
+                <option value="year three">year three</option>
+            </select>
+            <br><label>emergency contact number</label>
+            <input type="int" name="emergency contact" required>
+            <br><input type="checkbox" id="terms" name="terms" required>
+            <label for="terms"> i agree to the terms and conditions</label>
+            <br><button type="submit">register student</button>
+            <button type="clear">clear form</button>
+
+        </form>
+
+        <style>
+            body{
+                margin:20px;
+                background-color:lightcoral;
+            }
+            form{
+                background-color:lightblue;
+                padding:20px;
+            }
+        input,select{
+            margin:;
+        }
+
+        </style>
+
+        
+        </style>
+    </body>
+</html>

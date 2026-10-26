@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student ID Card</title>
+
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px 12px;
+            font-family: Arial, sans-serif;
+            background: #eeeaf5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .student-card {
+            width: 350px;
+            max-width: 100%;
+            background: white;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            border: 2px solid #4b168c;
+        }
+
+        .card-header {
+            background: #4b168c;
+            color: white;
+            text-align: center;
+            padding: 22px 10px;
+        }
+
+        .card-header h1 {
+            font-size: 22px;
+            margin: 0 0 6px;
+        }
+
+        .card-header p {
+            font-size: 12px;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        .photo-area {
+            text-align: center;
+            padding: 22px 10px 12px;
+        }
+
+        .profile-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #4b168c;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        .photo-label {
+            color: #4b168c;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .student-details {
+            padding: 5px 20px 15px;
+        }
+
+        .detail-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            min-height: 58px;
+            border-bottom: 1px solid #e4deed;
+            padding: 8px 0;
+        }
+
+        .detail-icon {
+            width: 35px;
+            flex-shrink: 0;
+            text-align: center;
+            color: #4b168c;
+            font-size: 23px;
+        }
+
+        .detail-text {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .detail-text strong {
+            display: block;
+            color: #32105d;
+            font-size: 13px;
+            margin-bottom: 4px;
+        }
+
+        .detail-text span {
+            display: block;
+            color: #333;
+            font-size: 14px;
+            overflow-wrap: anywhere;
+        }
+
+        .card-footer {
+            background: #4b168c;
+            color: white;
+            text-align: center;
+            padding: 18px 12px;
+        }
+
+        .barcode {
+            height: 38px;
+            width: 210px;
+            max-width: 100%;
+            margin: 0 auto 8px;
+            background: repeating-linear-gradient(
+                90deg,
+                white 0px,
+                white 2px,
+                #222 2px,
+                #222 4px,
+                white 4px,
+                white 7px,
+                #222 7px,
+                #222 9px,
+                white 9px,
+                white 12px
+            );
+        }
+
+        .card-footer p {
+            font-weight: bold;
+            font-size: 13px;
+            margin: 0;
+        }
+
+        .card-footer small {
+            display: block;
+            margin-top: 7px;
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="student-card">
+
+        <header class="card-header">
+            <h1>STUDENT ID CARD</h1>
+            <p>STUDENT IDENTIFICATION</p>
+        </header>
+
+        <div class="photo-area">
+            <img src="images/Cat 6.jpg"
+                 alt="Student photo"
+                 class="profile-photo">
+
+            <div class="photo-label">STUDENT PHOTO</div>
+        </div>
+
+        <div class="student-details">
+
+            <div class="detail-row">
+                <div class="detail-icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="detail-text">
+                    <strong>Name:</strong>
+                    <span>Your Full Name</span>
+                </div>
+            </div>
+
+            <div class="detail-row">
+                <div class="detail-icon">
+                    <i class="fa-solid fa-address-card"></i>
+                </div>
+                <div class="detail-text">
+                    <strong>Roll No:</strong>
+                    <span>YOUR STUDENT NUMBER</span>
+                </div>
+            </div>
+
+            <div class="detail-row">
+                <div class="detail-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="detail-text">
+                    <strong>Course:</strong>
+                    <span>Your Course Name</span>
+                </div>
+            </div>
+
+            <div class="detail-row">
+                <div class="detail-icon">
+                    <i class="fa-solid fa-building-columns"></i>
+                </div>
+                <div class="detail-text">
+                    <strong>College:</strong>
+                    <span>Your College Name</span>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="card-footer">
+            <div class="barcode"></div>
+            <p>STUDENT IDENTIFICATION</p>
+            <small>DESIGN SAMPLE — NOT AN OFFICIAL ID</small>
+        </footer>
+
+    </div>
+
+</body>
+</html>

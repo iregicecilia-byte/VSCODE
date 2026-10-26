@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>student id card</title>
+
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+         <style>
+            * {
+                box-sizing:border-box;
+            }
+            body {
+                margin:0;
+                padding:30px 12px;
+                font-family:Arial, Helvetica, sans-serif;
+                background:#eeeaf5;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                min-height:100vh;
+            }
+            .student-card {
+                width:350px;
+                max-width: 100%;
+                background:violet;
+                border: radius 18px;
+                overflow:hidden;
+                box-shadow:0 8px 25px rgba(0,0,0,0.7);
+                border:2px solid #6a1b9a;
+            }
+            .card-header {
+    background: #4b168c;
+    color: white;
+    text-align: center;
+    padding: 22px 10px;
+}
+
+.card-header h1 {
+    font-size: 22px;
+    margin: 0 0 6px;
+}
+
+.card-header p {
+    font-size: 12px;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.photo-area {
+    text-align: center;
+    padding: 22px 10px 12px;
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #4b168c;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.photo-label {
+    color: #4b168c;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.student-details {
+    padding: 5px 20px 15px;
+}
+
+.detail-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 58px;
+    border-bottom: 1px solid #e4deed;
+    padding: 8px 0;
+}
+
+.detail-icon {
+    width: 35px;
+    flex-shrink: 0;
+    text-align: center;
+    color: #4b168c;
+    font-size: 23px;
+}
+
+.detail-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.detail-text strong {
+    display: block;
+    color: #32105d;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.detail-text span {
+    display: block;
+    color: #333;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+.card-footer {
+    background: #4b168c;
+    color: white;
+    text-align: center;
+    padding: 18px 12px;
+}
+
+.barcode {
+    height: 38px;
+    width: 210px;
+    max-width: 100%;
+    margin: 0 auto 8px;
+    background: repeating-linear-gradient(
+        90deg,
+        white 0px,
+        white 2px,
+        #222 2px,
+        #222 4px,
+        white 4px,
+        white 7px,
+        #222 7px,
+        #222 9px,
+        white 9px,
+        white 12px
+    );
+}
+
+.card-footer p {
+    font-weight: bold;
+    font-size: 13px;
+    margin: 0;
+}
+
+.card-footer small {
+    display: block;
+    margin-top: 7px;
+    font-size: 10px;
+}
+         </style>
+    </head>
+    <div class="student-card">
+        <div class="card-header">
+            <h1>STUDENT ID CARD</h1>
+            <p>Student Identification Card</p>
+        </div>
+        <div class="photo-area">
+            <img src="Cat 6.jpg" alt="STUDENT PHOTO" class="profile-photo">
+            <p class="photo-label">STUDENT PHOTO</p>
+        </div>
+        <div class="student-details">
+            <div
+            <div class="row">
+                <span class="label"> NAME:</span>
+                <span class="value">CECILIA IREGI</span>
+            </div>
+            <div class="row">
+                <span class="label">REGISTRATION NUMBER:</span>
+                <span class="value"> CT100/G/26194/25</span>
+            </div>
+            <div class="row">
+                <span class="label">COURSE:</span>
+                <Span class="value">BACHELOR OF SCIENCE IN COMPUTER SCIENCE</Span>
+                </div>
+
+        </div>
+    </div>
+</html>

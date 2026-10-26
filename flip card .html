@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  background: #f4f4f4;
+  padding: 40px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 250px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.flip-card-front {
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.flip-card-back {
+  background: white;
+  color: #333;
+  transform: rotateY(180deg);
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<!-- Card 1 -->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <div style="font-size:60px;">🎓</div>
+      GRADUATE
+    </div>
+    <div class="flip-card-back">
+      <h3>I'm the Proud Aunt!</h3>
+      <p>Not the graduate, but the graduate's proud aunt! ❤️</p>
+    </div>
+  </div>
+</div>
+
+<!-- Card 2 -->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <div style="font-size:60px;">🎉</div>
+      CONGRATS
+    </div>
+    <div class="flip-card-back">
+      <h3>Well Done!</h3>
+      <p>Your hard work has paid off. We celebrate you!</p>
+    </div>
+  </div>
+</div>
+
+<!-- Card 3 -->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <div style="font-size:60px;">💐</div>
+      LOVE YOU
+    </div>
+    <div class="flip-card-back">
+      <h3>So Proud of You</h3>
+      <p>Keep shining! The future is yours. ✨</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
